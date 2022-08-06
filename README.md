@@ -38,13 +38,13 @@
 
 Выбираем ближайшую до нас локацию, операционную систему (Ubuntu), тип (Standard) и сервер (CPX31 в моем случае, в дальнейшем SSD можно расширить). Все это будет стоить 15 евро в месяц без дополнительной памяти.
 
-![[_attachments/Pasted%20image%2020220801183512.png]]
+![image](_attachments/Pasted%20image%2020220801183512.png)
 
 Если вы хотите сразу добавить недостоющие 340 GB - это вам обойдется еще в 16.46 евро в месяц.
 
 Все остальное я оставляю без изменений (можете дать серверу название).
 
-![[_attachments/Pasted%20image%2020220801183839.png]]
+![image](_attachments/Pasted%20image%2020220801183839.png)
 
 Создаем сервер и ждем его готовности (рядом с сервером загорится зеленая лампочка).
 
@@ -53,25 +53,25 @@
 
 Открываем Moba и жмем кнопку "Session".
 
-![[_attachments/Pasted%20image%2020220801184301.png]]
+![image](_attachments/Pasted%20image%2020220801184301.png)
 
 Жмем кнопку "SSH".
 
-![[_attachments/Pasted%20image%2020220801193124.png]]
+![image](_attachments/Pasted%20image%2020220801193124.png)
 
 В поле "Remote host" вбиваем наш IPv4, ставим галочку в поле "Specify username" и вписываем туда "root", далее жмем "OK".
 
-![[_attachments/Pasted%20image%2020220801184439.png]]
+![image](_attachments/Pasted%20image%2020220801184439.png)
 
 У нас появится командная строка с запросом пароля, вбиваем туда наш пароль (который мы получили по почте). Символы видны не будут, можно вставлять в терминал что - то из буффера комбинацией клавиш "Shift+Insert". Вставляем пароль и жмем ENTER. Не сохраняем пароль, если нам Moba это предложит.
 
 Так как это временный пароль, нам необходимо будет вбить его еще раз и далее вбить наш новый пароль 2 раза. Делаем.
 
-![[_attachments/Pasted%20image%2020220801184842.png]]
+![image](_attachments/Pasted%20image%2020220801184842.png)
 
 Сервак готов к работе.
 
-![[_attachments/Pasted%20image%2020220801184938.png]]
+![image](_attachments/Pasted%20image%2020220801184938.png)
 
 ## Задание 01
 Оффициальный гайд можете найти [тут](https://github.com/near/stakewars-iii/blob/main/challenges/001.md).
@@ -84,27 +84,27 @@
 
 Переходим на [сайт](https://wallet.shardnet.near.org/) и создаем кошелек в тестовой сети.
 
-![[_attachments/Pasted%20image%2020220801185632.png]]
+![image](_attachments/Pasted%20image%2020220801185632.png)
 
 Выбираем себе ник и жмем синюю кнопку.
 
-![[_attachments/Pasted%20image%2020220801185729.png]]
+![image](_attachments/Pasted%20image%2020220801185729.png)
 
 В качестве метода защиты я выбрал "Secure Passphrase".
 
-![[_attachments/Pasted%20image%2020220801185817.png]]
+![image](_attachments/Pasted%20image%2020220801185817.png)
 
 Сохраняем сид фразу (никому не показываем ее никогда), жмем "Continue". Далее вставляем слово из нашей сид фразы, которое у нас запросили. В моем случае это слово под номером 3, жмем "Verify & Complete". Этот шаг может потребовать несколько больше времени, просто ждем, если словите ошибку - пробуйте снова.
 
-![[_attachments/Pasted%20image%2020220801185950.png]]
+![image](_attachments/Pasted%20image%2020220801185950.png)
 
 Далее вставляем всю нашу сид фразу в поле и жмем "Find My Account". Процесс тоже займет некоторое время.
 
-![[_attachments/Pasted%20image%2020220801190123.png]]
+![image](_attachments/Pasted%20image%2020220801190123.png)
 
 Если все прошло хорошо - вы не увидите никаких ошибок, создастся аккаунт и на нем будет какое - то количество монет.
 
-![[_attachments/Pasted%20image%2020220801190220.png]]
+![image](_attachments/Pasted%20image%2020220801190220.png)
 
 ### Устанавливаем NEAR CLI на сервер
 
@@ -114,29 +114,29 @@
 sudo apt update && sudo apt upgrade -y
 ```
 
-![[_attachments/Pasted%20image%2020220801190557.png]]
+![image](_attachments/Pasted%20image%2020220801190557.png)
 
 ```
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
 ```
 
-![[_attachments/Pasted%20image%2020220801190641.png]]
+![image](_attachments/Pasted%20image%2020220801190641.png)
 
 ```
 sudo apt install build-essential nodejs
 ```
 
-![[_attachments/Pasted%20image%2020220801190709.png]]
+![image](_attachments/Pasted%20image%2020220801190709.png)
 
 Вбиваем "Y" и жмем ENTER.
 
-![[_attachments/Pasted%20image%2020220801190758.png]]
+![image](_attachments/Pasted%20image%2020220801190758.png)
 
 ```
 PATH="$PATH"
 ```
 
-![[_attachments/Pasted%20image%2020220801190819.png]]
+![image](_attachments/Pasted%20image%2020220801190819.png)
 
 ```
 node -v
@@ -144,7 +144,7 @@ node -v
 
 Должно отбиться в терминале v18.x.x, у меня v18.7.0.
 
-![[_attachments/Pasted%20image%2020220801190917.png]]
+![image](_attachments/Pasted%20image%2020220801190917.png)
 
 ```
 npm -v
@@ -152,37 +152,37 @@ npm -v
 
 Должно отбиться в терминале 8.x.x, у меня 8.15.0.
 
-![[_attachments/Pasted%20image%2020220801190953.png]]
+![image](_attachments/Pasted%20image%2020220801190953.png)
 
 ```
 sudo npm install -g near-cli
 ```
 
-![[_attachments/Pasted%20image%2020220801191033.png]]
+![image](_attachments/Pasted%20image%2020220801191033.png)
 
 ```
 export NEAR_ENV=shardnet
 ```
 
-![[_attachments/Pasted%20image%2020220801191101.png]]
+![image](_attachments/Pasted%20image%2020220801191101.png)
 
 ```
 echo 'export NEAR_ENV=shardnet' >> ~/.bashrc
 ```
 
-![[_attachments/Pasted%20image%2020220801191120.png]]
+![image](_attachments/Pasted%20image%2020220801191120.png)
 
 ```
 echo 'export NEAR_ENV=shardnet' >> ~/.bash_profile
 ```
 
-![[_attachments/Pasted%20image%2020220801191137.png]]
+![image](_attachments/Pasted%20image%2020220801191137.png)
 
 ```
 source $HOME/.bash_profile
 ```
 
-![[_attachments/Pasted%20image%2020220801191154.png]]
+![image](_attachments/Pasted%20image%2020220801191154.png)
 
 ### Проверяем, встал ли NEAR CLI на сервер.
 
@@ -192,7 +192,7 @@ near proposals
 
 Если что - то такое выдает - все ок.
 
-![[_attachments/Pasted%20image%2020220801191306.png]]
+![image](_attachments/Pasted%20image%2020220801191306.png)
 
 
 ## Задание 02
@@ -211,99 +211,99 @@ lscpu | grep -P '(?=.*avx )(?=.*sse4.2 )(?=.*cx16 )(?=.*popcnt )' > /dev/null \
 
 Вот так должно быть, если сервак подходит под это дело.
 
-![[_attachments/Pasted%20image%2020220801191518.png]]
+![image](_attachments/Pasted%20image%2020220801191518.png)
 
 ```
 sudo apt install -y git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ python docker.io protobuf-compiler libssl-dev pkg-config clang llvm cargo
 ```
 
-![[_attachments/Pasted%20image%2020220801191651.png]]
+![image](_attachments/Pasted%20image%2020220801191651.png)
 
 ```
 apt-get install containerd=1.3.3-0ubuntu2
 ```
 
-![[_attachments/Pasted%20image%2020220801191706.png]]
+![image](_attachments/Pasted%20image%2020220801191706.png)
 
 Вбиваем "Y" и жмем ENTER.
 
-![[_attachments/Pasted%20image%2020220801191749.png]]
+![image](_attachments/Pasted%20image%2020220801191749.png)
 
 ```
 sudo apt install python3-pip
 ```
 
-![[_attachments/Pasted%20image%2020220801191808.png]]
+![image](_attachments/Pasted%20image%2020220801191808.png)
 
 Вбиваем "Y" и жмем ENTER.
 
-![[_attachments/Pasted%20image%2020220801191825.png]]
+![image](_attachments/Pasted%20image%2020220801191825.png)
 
 ```
 USER_BASE_BIN=$(python3 -m site --user-base)/bin
 ```
 
-![[_attachments/Pasted%20image%2020220801191846.png]]
+![image](_attachments/Pasted%20image%2020220801191846.png)
 
 ```
 export PATH="$USER_BASE_BIN:$PATH"
 ```
 
-![[_attachments/Pasted%20image%2020220801191900.png]]
+![image](_attachments/Pasted%20image%2020220801191900.png)
 
 ```
 sudo apt install clang build-essential make
 ```
 
-![[_attachments/Pasted%20image%2020220801191920.png]]
+![image](_attachments/Pasted%20image%2020220801191920.png)
 
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-![[_attachments/Pasted%20image%2020220801191946.png]]
+![image](_attachments/Pasted%20image%2020220801191946.png)
 
 Вбиваем "y" и жмем ENTER.
 
-![[_attachments/Pasted%20image%2020220801191959.png]]
+![image](_attachments/Pasted%20image%2020220801191959.png)
 
 Вбиваем "1" и жмем ENTER.
 
-![[_attachments/Pasted%20image%2020220801192036.png]]
+![image](_attachments/Pasted%20image%2020220801192036.png)
 
 ```
 source $HOME/.cargo/env
 ```
 
-![[_attachments/Pasted%20image%2020220801192054.png]]
+![image](_attachments/Pasted%20image%2020220801192054.png)
 
 ```
 git clone https://github.com/near/nearcore
 ```
 
-![[_attachments/Pasted%20image%2020220801192426.png]]
+![image](_attachments/Pasted%20image%2020220801192426.png)
 
 ```
 cd nearcore
 ```
 
-![[_attachments/Pasted%20image%2020220801192437.png]]
+![image](_attachments/Pasted%20image%2020220801192437.png)
 
 ```
 git fetch
 ```
 
-![[_attachments/Pasted%20image%2020220801192459.png]]
+![image](_attachments/Pasted%20image%2020220801192459.png)
 
 Идем по [ссылке](https://github.com/near/stakewars-iii/blob/main/commit.md) и берем там строчку (вероятно, она может измениться, потому не копируйте мою команду, а перепроверьте).
 
-![[_attachments/Pasted%20image%2020220801192723.png]]
+![image](_attachments/Pasted%20image%2020220801192723.png)
 
 ```
 git checkout c1b047b8187accbf6bd16539feb7bb60185bdc38
 ```
 
-![[_attachments/Pasted%20image%2020220801192843.png]]
+![image](_attachments/Pasted%20image%2020220801192843.png)
 
 ```
 cargo build -p neard --release --features shardnet
@@ -311,25 +311,25 @@ cargo build -p neard --release --features shardnet
 
 Тут потребуется минут 10.
 
-![[_attachments/Pasted%20image%2020220801194224.png]]
+![image](_attachments/Pasted%20image%2020220801194224.png)
 
 ```
 ./target/release/neard --home ~/.near init --chain-id shardnet --download-genesis
 ```
 
-![[_attachments/Pasted%20image%2020220801194402.png]]
+![image](_attachments/Pasted%20image%2020220801194402.png)
 
 ```
 rm ~/.near/config.json
 ```
 
-![[_attachments/Pasted%20image%2020220801194453.png]]
+![image](_attachments/Pasted%20image%2020220801194453.png)
 
 ```
 wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/config.json
 ```
 
-![[_attachments/Pasted%20image%2020220801194540.png]]
+![image](_attachments/Pasted%20image%2020220801194540.png)
 
 ```
 ./target/release/neard --home ~/.near run
@@ -337,53 +337,53 @@ wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotoco
 
 Запускается нода, начинается что - то вроде синхронизации, ждем 100%.
 
-![[_attachments/Pasted%20image%2020220801224848.png]]
+![image](_attachments/Pasted%20image%2020220801224848.png)
 
 В итоге у нас должен пойти похожий лог. Сверяем текущий блок с [эксплорером](https://explorer.shardnet.near.org/). Должно быть похожее значение.
 
-![[_attachments/Pasted%20image%2020220801232149.png]]
+![image](_attachments/Pasted%20image%2020220801232149.png)
 
 ### Активируем валидатора
 
 Нажимаем "CTRL+C" в консоли.
 
-![[_attachments/Pasted%20image%2020220801232328.png]]
+![image](_attachments/Pasted%20image%2020220801232328.png)
 
 ```
 near login
 ```
 
-![[_attachments/Pasted%20image%2020220801232419.png]]
+![image](_attachments/Pasted%20image%2020220801232419.png)
 
 Вбиваем "y" и жмем ENTER.
 
-![[_attachments/Pasted%20image%2020220801232510.png]]
+![image](_attachments/Pasted%20image%2020220801232510.png)
 
 Полностью копируем ссылку из терминала и вставляем ее в браузер, в котором мы залогинены в наш кошелек.
 
-![[_attachments/Pasted%20image%2020220801232603.png]]
+![image](_attachments/Pasted%20image%2020220801232603.png)
 
 Жмем "Next".
 
-![[_attachments/Pasted%20image%2020220801232634.png]]
+![image](_attachments/Pasted%20image%2020220801232634.png)
 
 Жмем "Connect".
 
-![[_attachments/Pasted%20image%2020220801232703.png]]
+![image](_attachments/Pasted%20image%2020220801232703.png)
 
 Вставляем адрес нашего кошелька в поле и жмем "Confirm". На этом этапе просто ждем, пока появится такая страница.
 
-![[_attachments/Pasted%20image%2020220801232803.png]]
+![image](_attachments/Pasted%20image%2020220801232803.png)
 
 Идем обратно в терминал и вбиваем адрес нашего кошелька, жмем ENTER. Должна появиться инфа о том, что кошелек подключен.
 
-![[_attachments/Pasted%20image%2020220801232919.png]]
+![image](_attachments/Pasted%20image%2020220801232919.png)
 
 	```
 	cd ..
 	```
 	
-	![[_attachments/Pasted%20image%2020220801233031.png]]
+	![image](_attachments/Pasted%20image%2020220801233031.png)
 
 ```
 cat ~/.near/validator_key.json
@@ -391,7 +391,7 @@ cat ~/.near/validator_key.json
 
 Если  пишет, что нет такого файла - делаем следующее (у меня нет файла).
 
-![[_attachments/Pasted%20image%2020220801233156.png]]
+![image](_attachments/Pasted%20image%2020220801233156.png)
 
 Придумаем название для нашего пула (pool_id). Я выбрал название как при создании кошелька "cryptobusher666". Теперь мой пул называется "cryptobusher666.factory.shardnet.near". Вбиваем команду (замените pool_id на свой), в моем случае:
 
@@ -399,7 +399,7 @@ cat ~/.near/validator_key.json
 near generate-key cryptobusher666.factory.shardnet.near
 ```
 
-![[_attachments/Pasted%20image%2020220801233546.png]]
+![image](_attachments/Pasted%20image%2020220801233546.png)
 
 Вбиваем команду, предварительно заменив pool_id на ваш собственный.
 
@@ -407,28 +407,28 @@ near generate-key cryptobusher666.factory.shardnet.near
 cp ~/.near-credentials/shardnet/cryptobusher666.factory.shardnet.near.json ~/.near/validator_key.json
 ```
 
-![[_attachments/Pasted%20image%2020220801233751.png]]
+![image](_attachments/Pasted%20image%2020220801233751.png)
 
 Так как мы работаем в MobaXTerm, мы можем облегчить себе жизнь при редактировании .json файла, просто переходим в навигаторе (слева) в папку "root -> .near".
 
-![[_attachments/Pasted%20image%2020220801233923.png]]
+![image](_attachments/Pasted%20image%2020220801233923.png)
 
 Открываем наш файл "validator_key.json".
 
-![[_attachments/Pasted%20image%2020220801234008.png]]
+![image](_attachments/Pasted%20image%2020220801234008.png)
 
 Откроется окно с данными, нужно заменить "private_key" на "secret_key". 
 
-![[_attachments/Pasted%20image%2020220801234124.png]]
-![[_attachments/Pasted%20image%2020220801234141.png]]
+![image](_attachments/Pasted%20image%2020220801234124.png)
+![image](_attachments/Pasted%20image%2020220801234141.png)
 
 Нужно удостоверится, что тут указан ваш pool_id. Если это не так - редактируем.
 
-![[_attachments/Pasted%20image%2020220801234251.png]]
+![image](_attachments/Pasted%20image%2020220801234251.png)
 
 Жмем "CTRL+S". Сохраняем все данные в блокнот, они нам могут пригодиться, будет гораздо удобнее иметь к ним легкий доступ.
 
-![[_attachments/Pasted%20image%2020220801234319.png]]
+![image](_attachments/Pasted%20image%2020220801234319.png)
 
 Жмем "Yes".
 
@@ -438,21 +438,21 @@ target/release/neard run
 
 Запускается валидатор, сверяем блоки
 
-![[_attachments/Pasted%20image%2020220801234759.png]]
+![image](_attachments/Pasted%20image%2020220801234759.png)
 
 Жмем "CTRL+C".
 
-![[_attachments/Pasted%20image%2020220801234834.png]]
+![image](_attachments/Pasted%20image%2020220801234834.png)
 
 ```
 sudo vi /etc/systemd/system/neard.service
 ```
 
-![[_attachments/Pasted%20image%2020220801234918.png]]
+![image](_attachments/Pasted%20image%2020220801234918.png)
 
 Открывается редактор, жмем клавишу "i".
 
-![[_attachments/Pasted%20image%2020220801234931.png]]
+![image](_attachments/Pasted%20image%2020220801234931.png)
 
 Вставляем такой вот скрипт, предварительно подправив имя юзера на свое в путях. Вот как выглядит шаблон от разработчиков (обратите внимание на \<USER>).
 
@@ -498,34 +498,34 @@ KillMode=mixed
 WantedBy=multi-user.target
 ```
 
-![[_attachments/Pasted%20image%2020220801235523.png]]
+![image](_attachments/Pasted%20image%2020220801235523.png)
 
 Эмем "ESC".
 
-![[_attachments/Pasted%20image%2020220801235545.png]]
+![image](_attachments/Pasted%20image%2020220801235545.png)
 
 Жмем ":", вписываем "wq" и жмем "ENTER".
 
-![[_attachments/Pasted%20image%2020220801235631.png]]
-![[_attachments/Pasted%20image%2020220801235645.png]]
+![image](_attachments/Pasted%20image%2020220801235631.png)
+![image](_attachments/Pasted%20image%2020220801235645.png)
 
 ```
 sudo systemctl enable neard
 ```
 
-![[_attachments/Pasted%20image%2020220801235715.png]]
+![image](_attachments/Pasted%20image%2020220801235715.png)
 
 ```
 sudo systemctl start neard
 ```
 
-![[_attachments/Pasted%20image%2020220801235735.png]]
+![image](_attachments/Pasted%20image%2020220801235735.png)
 
 ```
 sudo apt install ccze
 ```
 
-![[_attachments/Pasted%20image%2020220801235817.png]]
+![image](_attachments/Pasted%20image%2020220801235817.png)
 
 Данной командой можем в любой момент чекнуть логи. Чтоб выйти, просто вбиваем "CTRL+C".
 
@@ -533,7 +533,7 @@ sudo apt install ccze
 journalctl -n 100 -f -u neard | ccze -A
 ```
 
-![[_attachments/Pasted%20image%2020220802000036.png]]
+![image](_attachments/Pasted%20image%2020220802000036.png)
 
 
 
@@ -561,11 +561,11 @@ near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "<pool 
 near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "cryptobusher666", "owner_id": "cryptobusher666.shardnet.near", "stake_public_key": "ed25519:Bdki49wnff9SHF4ZpUYvrvf9KyAKezDSTWfX8sCVdfqu", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="cryptobusher666.shardnet.near" --amount=30 --gas=300000000000000
 ```
 
-![[_attachments/Pasted%20image%2020220802001334.png]]
+![image](_attachments/Pasted%20image%2020220802001334.png)
 
 Можем зайти в [эксплорер](https://explorer.shardnet.near.org/) и проверить, что произошло на нашем аккаунте (в моем случае на "cryptobusher666.shardnet.near").  Виден успешный вызов метода и изменение баланса (примерно на 30 Near).
 
-![[_attachments/Pasted%20image%2020220802001456.png]]
+![image](_attachments/Pasted%20image%2020220802001456.png)
 
 Можете изменить параметры пула (например комиссия), можете использовать следующую команду, однако я этого делать не буду.
 
@@ -583,7 +583,7 @@ near call <pool_name> update_reward_fee_fraction '{"reward_fee_fraction": {"nume
 
 Мне ничего не выдало, должно быть так вообще:
 
-![[_attachments/Pasted%20image%2020220802003926.png]]
+![image](_attachments/Pasted%20image%2020220802003926.png)
 
 Посерфил дискорд и понял, для того, чтоб попасть в proposal нужно застейкать суммарно 56 Near. Где их взять - не особо понятно, но все создают еще один кошелек, чтоб получить дополнительных 50 Near и застейкать их. Не уверен, что это прям понравится команде, но другого выхода я не вижу, потому сделал как все.
 
@@ -603,7 +603,7 @@ near call cryptobusher666.factory.shardnet.near deposit_and_stake --amount 49 --
 
 Появились дополнительные токены в пуле.
 
-![[_attachments/Pasted%20image%2020220802004500.png]]
+![image](_attachments/Pasted%20image%2020220802004500.png)
 
 Проверяем, попали ли мы в proposals:
 
@@ -611,15 +611,15 @@ near call cryptobusher666.factory.shardnet.near deposit_and_stake --amount 49 --
  near proposals | grep cryptobusher666
 ```
 
-![[_attachments/Pasted%20image%2020220802004543.png]]
+![image](_attachments/Pasted%20image%2020220802004543.png)
 
 Ура, попали. Идем в [дискорд Near](https://discord.com/invite/UY9Xf2k), в канал  "stake-wars-tokens_delegation".
 
-![[_attachments/Pasted%20image%2020220802004740.png]]
+![image](_attachments/Pasted%20image%2020220802004740.png)
 
 Просим токены, это может затянуться, так как очередь на раздачу большая, просто терпеливо ждем и иногда напоминаем о себе (не стоит спамить). Пока я не получил токены, иду дальше выполнять задания.
 
-![[_attachments/Pasted%20image%2020220802004851.png]]
+![image](_attachments/Pasted%20image%2020220802004851.png)
 
 ## Задание 04
 
@@ -639,11 +639,11 @@ journalctl -n 100 -f -u neard | ccze -A
 sudo apt install curl jq
 ```
 
-![[_attachments/Pasted%20image%2020220802145024.png]]
+![image](_attachments/Pasted%20image%2020220802145024.png)
 
 Вбиваем "Y" и жмем ENTER.
 
-![[_attachments/Pasted%20image%2020220802145112.png]]
+![image](_attachments/Pasted%20image%2020220802145112.png)
 
 Готово. В оффициальном гайде по этому заданию перечислены команды для проверки некоторых данных (проверка валидаторов и стейка, причины кика валидатора, информация по блокам). Советую попрактиковаться.
 
@@ -693,19 +693,19 @@ pwd
 
 Итак, допустим я нахожусь в папке "nearcore".
 
-![[_attachments/Pasted%20image%2020220802150225.png]]
+![image](_attachments/Pasted%20image%2020220802150225.png)
 
 ```
 cd ..
 ```
 
-![[_attachments/Pasted%20image%2020220802150330.png]]
+![image](_attachments/Pasted%20image%2020220802150330.png)
 
 ```
 pwd
 ```
 
-![[_attachments/Pasted%20image%2020220802150349.png]]
+![image](_attachments/Pasted%20image%2020220802150349.png)
 
 Я в руте, создаю тут папку "scripts".
 
@@ -719,7 +719,7 @@ mkrid scripts
 ls
 ```
 
-![[_attachments/Pasted%20image%2020220802150541.png]]
+![image](_attachments/Pasted%20image%2020220802150541.png)
 
 Иду в эту папку.
 
@@ -727,7 +727,7 @@ ls
 cd scripts
 ```
 
-![[_attachments/Pasted%20image%2020220802150614.png]]
+![image](_attachments/Pasted%20image%2020220802150614.png)
 
 Создаю файл "ping.sh".
 
@@ -741,7 +741,7 @@ touch ping.sh
 ls
 ```
 
-![[_attachments/Pasted%20image%2020220802150709.png]]
+![image](_attachments/Pasted%20image%2020220802150709.png)
 
 Открываю файл с помощью vim.
 
@@ -749,11 +749,11 @@ ls
 vim ping.sh
 ```
 
-![[_attachments/Pasted%20image%2020220802150830.png]]
+![image](_attachments/Pasted%20image%2020220802150830.png)
 
 Жму "i".
 
-![[_attachments/Pasted%20image%2020220802150854.png]]
+![image](_attachments/Pasted%20image%2020220802150854.png)
 
 Вставляю данный скрипт, предварительно изменив пути. Вот так выглядит шаблон.
 
@@ -793,19 +793,19 @@ near validators current | grep $POOLID >> $LOGS/all.log
 near validators next | grep $POOLID >> $LOGS/all.log
 ```
 
-![[_attachments/Pasted%20image%2020220802151235.png]]
+![image](_attachments/Pasted%20image%2020220802151235.png)
 
 Жму "ESC". 
 
-![[_attachments/Pasted%20image%2020220802151258.png]]
+![image](_attachments/Pasted%20image%2020220802151258.png)
 
 Жму ":" и пишу "wq".
 
-![[_attachments/Pasted%20image%2020220802151332.png]]
+![image](_attachments/Pasted%20image%2020220802151332.png)
 
 Жму "ENTER".
 
-![[_attachments/Pasted%20image%2020220802151354.png]]
+![image](_attachments/Pasted%20image%2020220802151354.png)
 
 Создаю папку для логов.
 
@@ -813,7 +813,7 @@ near validators next | grep $POOLID >> $LOGS/all.log
 mkdir $HOME/logs
 ```
 
-![[_attachments/Pasted%20image%2020220802151506.png]]
+![image](_attachments/Pasted%20image%2020220802151506.png)
 
 Меняем permission для скрипта.
 
@@ -821,7 +821,7 @@ mkdir $HOME/logs
 chmod +x $HOME/scripts/ping.sh
 ```
 
-![[_attachments/Pasted%20image%2020220802151540.png]]
+![image](_attachments/Pasted%20image%2020220802151540.png)
 
 Создаем crontab с интервалом в 2 часа.
 
@@ -829,11 +829,11 @@ chmod +x $HOME/scripts/ping.sh
 crontab -e
 ```
 
-![[_attachments/Pasted%20image%2020220802151627.png]]
+![image](_attachments/Pasted%20image%2020220802151627.png)
 
 Я выбрал второй вариант, жму "2" и "ENTER".
 
-![[_attachments/Pasted%20image%2020220802151712.png]]
+![image](_attachments/Pasted%20image%2020220802151712.png)
 
 Все как обычно, жму "i", вставляю скрипт, предварительно заменив значение на свое, вот шаблон:
 
@@ -847,11 +847,11 @@ crontab -e
 0 */2 * * * sh /root/scripts/ping.sh
 ```
 
-![[_attachments/Pasted%20image%2020220802151805.png]]
+![image](_attachments/Pasted%20image%2020220802151805.png)
 
 Жму "ESC", жму ":", пишу "wq" и жму "ENTER".
 
-![[_attachments/Pasted%20image%2020220802151849.png]]
+![image](_attachments/Pasted%20image%2020220802151849.png)
 
 В дальнейшем у нас будут появляться логи, просмотреть их можно с помощью данной команды:
 
@@ -880,13 +880,13 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 ```
 
-![[_attachments/Pasted%20image%2020220802153007.png]]
+![image](_attachments/Pasted%20image%2020220802153007.png)
 
 ```
 rustup target add wasm32-unknown-unknown
 ```
 
-![[_attachments/Pasted%20image%2020220802152539.png]]
+![image](_attachments/Pasted%20image%2020220802152539.png)
 
 Тут надо склонировать репозиторий из Гитхаба. Для этого я создам директорию "github" в "root".
 
@@ -894,31 +894,31 @@ rustup target add wasm32-unknown-unknown
 mkdir github
 ```
 
-![[_attachments/Pasted%20image%2020220802152652.png]]
+![image](_attachments/Pasted%20image%2020220802152652.png)
 
 ```
 cd github
 ```
 
-![[_attachments/Pasted%20image%2020220802152715.png]]
+![image](_attachments/Pasted%20image%2020220802152715.png)
 
 ```
 git clone https://github.com/zavodil/near-staking-pool-owner
 ```
 
-![[_attachments/Pasted%20image%2020220802153053.png]]
+![image](_attachments/Pasted%20image%2020220802153053.png)
 
 ```
 cd near-staking-pool-owner/contract
 ```
 
-![[_attachments/Pasted%20image%2020220802153119.png]]
+![image](_attachments/Pasted%20image%2020220802153119.png)
 
 ```
 cargo build --target wasm32-unknown-unknown --release
 ```
 
-![[_attachments/Pasted%20image%2020220802153231.png]]
+![image](_attachments/Pasted%20image%2020220802153231.png)
 
 Вбиваем команду, скорректировав некоторые данные под себя, вот шаблон:
 
@@ -932,7 +932,7 @@ NEAR_ENV=shardnet near deploy <OWNER_ID>.shardnet.near --wasmFile target/wasm32-
 NEAR_ENV=shardnet near deploy cryptobusher666.shardnet.near --wasmFile target/wasm32-unknown-unknown/release/contract.wasm
 ```
 
-![[_attachments/Pasted%20image%2020220802153438.png]]
+![image](_attachments/Pasted%20image%2020220802153438.png)
 
 Создаем переменную, вот шаблон команды:
 
@@ -946,7 +946,7 @@ CONTRACT_ID=<OWNER_ID>.shardnet.near
 CONTRACT_ID=cryptobusher666.shardnet.near
 ```
 
-![[_attachments/Pasted%20image%2020220802154046.png]]
+![image](_attachments/Pasted%20image%2020220802154046.png)
 
 Тут нам нужен еще один аккаунт для получения наград. Создаем новый аккаунт в Shardnet сети, мы это делали в первом задании, все происходит похожим образом. Я создал новый аккаунт "cryptobusher6662.shardnet.near" (там двойка в конце).
 
@@ -962,7 +962,7 @@ NEAR_ENV=shardnet near call $CONTRACT_ID new '{"staking_pool_account_id": "<STAK
 NEAR_ENV=shardnet near call $CONTRACT_ID new '{"staking_pool_account_id": "cryptobusher666.factory.shardnet.near", "owner_id":"cryptobusher666.shardnet.near", "reward_receivers": [["cryptobusher666.shardnet.near", {"numerator": 5, "denominator":10}], ["cryptobusher6662.shardnet.near", {"numerator": 5, "denominator":10}]]}' --accountId $CONTRACT_ID
 ```
 
-![[_attachments/Pasted%20image%2020220802155211.png]]
+![image](_attachments/Pasted%20image%2020220802155211.png)
 
 Необходимо подождать, пока мы начнем получать реварды и сделать их вывод. Это можно сделать после завершения эпохи, которая длится 12 часов. Ждем и вбиваем команду, скорректировав все своими значениями. Вот шаблон:
 
