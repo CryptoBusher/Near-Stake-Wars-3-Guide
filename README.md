@@ -977,11 +977,11 @@ NEAR_ENV=shardnet near call $CONTRACT_ID withdraw '{}' --accountId $CONTRACT_ID 
 Вот мой вариант:
 
 ```
-
+CONTRACT_ID=cryptobusher666.shardnet.near
 ```
 
 ```
-
+NEAR_ENV=shardnet near call $CONTRACT_ID withdraw '{}' --accountId $CONTRACT_ID --gas 200000000000000
 ```
 
 Далее делаем скрин успешного вывода токенов и прикрепляем к [форме](https://docs.google.com/forms/d/e/1FAIpQLScp9JEtpk1Fe2P9XMaS9Gl6kl9gcGVEp3A5vPdEgxkHx3ABjg/viewform) отчета по данному заданию. Больше подробностей об отчете можете найти в оффициальном гайде по данному заданию.
